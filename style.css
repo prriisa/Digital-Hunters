@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarpanch:wght@400;500;600;700;800;900&family=Science+Gothic:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+header {
+  height: 5rem;
+  background: linear-gradient(130deg, #010c11, #010609);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainlogo {
+  max-width: 10rem;
+  /* background-color: green; */
+}
+.mainlogo img {
+  width: 100%;
+}
+.navbar {
+  max-width: 30rem;
+  /* background-color: green; */
+  display: flex;
+  column-gap: 2rem;
+}
+.navbar h4 {
+  color: rgb(195, 195, 195);
+  font-weight: 400;
+  font-family: "Jost";
+  padding: 1rem 0;
+}
+.navbar h4:nth-child(1) {
+  position: relative;
+}
+
+.navbar h4:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+  background: #00ffcc;
+
+  box-shadow: 1px -7px 25px 3px #00ffcc;
+}
+header button {
+  padding: 0.8rem 1.4rem;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rgb(195, 195, 195);
+  border: 1.5px solid #00ffcc;
+  display: flex;
+  align-self: center;
+}
+.headerbutton svg {
+  width: 15px;
+  height: 15px;
+  color: #00ffcc;
+  margin: 0 0 0 0.7rem;
+}
+main {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #010609 1%, #010c11 100%);
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+.detail {
+  max-width: 32rem;
+  min-height: 100%;
+  /* background-color: green; */
+  margin: 0 0 0 3rem;
+  margin-top: 5rem;
+  line-height: 5rem;
+}
+.detail h4 {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #00ffcc;
+}
+.detail h1 {
+  z-index: 9;
+  font-family: "Sarpanch";
+  font-size: 7.5rem;
+  z-index: 10;
+  color: rgb(195, 195, 195);
+}
+.detail h1 span {
+  color: #00ffcc;
+  font-size: 7rem;
+}
+.detail h3 {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(195, 195, 195);
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+.description {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: rgb(174, 174, 174);
+  line-height: 1.2rem;
+  margin-top: 1.2rem;
+}
+.detail-button {
+  margin-top: 1.8rem;
+  width: 88%;
+  height: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: pink; */
+}
+.button1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.8rem;
+  border-radius: 8px;
+  border: 1.5px solid #00ffcc;
+  font-weight: 600;
+  color: rgb(174, 174, 174);
+  background: linear-gradient(90deg, #010c11 35%, #00ffcc);
+}
+.detail div button i {
+  margin-left: 0.5rem;
+  font-size: 30px;
+}
+.play {
+  display: flex;
+  align-items: center;
+}
+.play button {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  border: 1.5px solid #00ffcc;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.play svg {
+  height: 21px;
+  width: 21px;
+  color: white;
+}
+.play p {
+  font-family: "Jost";
+  font-weight: 400;
+  color: rgb(195, 195, 195);
+  margin-left: 0.6rem;
+}
+.character-img {
+  position: absolute;
+  height: 130vh;
+  width: 49vw;
+  top: 0;
+  left: 36vw;
+}
+.character {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.hero-options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 3rem;
+  top: 7rem;
+  width: 12rem;
+  height: 20rem;
+  row-gap: 3rem;
+  /* background-color: green; */
+}
+.option {
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  /* background-color: blue; */
+}
+.option button {
+  height: 3.8rem;
+  width: 3.8rem;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 1.5px solid #00ffcc;
+  box-shadow: 0 0 12px -2px #00ffcc;
+  box-shadow:  0 0 -12px -2px #00ffcc;
+  /* background-color: gold; */
+}
+.option svg {
+  width: 2rem;
+  height: 2rem;
+  color: #00ffcc;
+}
+.option h4 {
+  margin-left: 1rem;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(195, 195, 195);
+}
